@@ -17,7 +17,7 @@ export function Header() {
 					Nuestra Boda Civil
 				</h1>
 				<h2 className="mb-10 text-8xl font-semibold text-blue-900">
-					Karen & Eberth
+					fasfasfas
 				</h2>
 			</div>
 			<div className="text-center items-center m-5 text-4xl">

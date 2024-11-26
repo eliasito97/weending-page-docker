@@ -12,12 +12,12 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 
 # Instalar dependencias
-RUN npm install
+RUN npm install next@14.0.4 && npm install
 
 # Construir la aplicación
 COPY . .
-RUN npm run build
+
 
 # Exponer el puerto y establecer el comando de inicio
 EXPOSE 3000
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "dev"]
