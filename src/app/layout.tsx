@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Allura({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Nuestra Boda E & K",
+	title: "Nuestra Boda T & D",
 	description: "Pagina creada por Alex Wong",
 };
 

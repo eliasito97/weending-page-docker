@@ -17,23 +17,24 @@ export function Gratitude() {
 					Padres de la Novia
 				</p>
 				<p className="mb-10 md:mt-8 text-4xl">
-					Alex Edberto Ramirez Vargas{" "}
-					<PiCrossLight className="inline text-black" />
+					Lucio Daniel Peramas Eyzaguirre
+
 				</p>
 				<p className="mb-10 md:mt-8 text-4xl">
-					Silvia Jenny Yapura Vda de Ramirez
+					Lenny Vargas Fernandez
 				</p>
 				<p className="mb-10 md:mt-8 font-semibold text-5xl text-blue-900">
 					Padres del Novio
 				</p>
 				<p className="mb-10 md:mt-8 text-4xl">
-					Eberth Joaquin Ayala Lara
+					Gonzalo Dante Chavarria Arevalo{" "}
+					<PiCrossLight className="inline text-black" />
 				</p>
-				<p className="mb-10 md:mt-8 text-4xl">Gueiza Ruiz de Ayala</p>
+				<p className="mb-10 md:mt-8 text-4xl">Monica jorge Bouchabki Lens</p>
 			</div>
 			<div className="grid grid-cols-2 mb-10 gap-5 md:grid-cols-2">
 				<Image
-					src={"/assets/img1.jpg"}
+					src={"/assets/tarek/tarek2.jpg"}
 					alt={"Image 1"}
 					width={1200}
 					height={1200}
@@ -41,7 +42,7 @@ export function Gratitude() {
 					priority
 				/>
 				<Image
-					src={"/assets/img2.jpg"}
+					src={"/assets/tarek/tarek3.jpg"}
 					alt={"Image 2"}
 					width={1200}
 					height={1200}

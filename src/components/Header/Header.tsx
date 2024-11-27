@@ -17,7 +17,7 @@ export function Header() {
 					Nuestra Boda Civil
 				</h1>
 				<h2 className="mb-10 text-8xl font-semibold text-blue-900">
-					fasfasfas
+					Tarek & Daniela
 				</h2>
 			</div>
 			<div className="text-center items-center m-5 text-4xl">
@@ -31,11 +31,11 @@ export function Header() {
 				<MusicPlayer />
 			</div>
 			<Image
-				src={"/assets/banner.jpg"}
+				src={"/assets/tarek/tarek1.jpg"}
 				alt={"Frame 1"}
 				width={1200}
 				height={1200}
-				className="w-auto h-auto rounded-2xl mb-8"
+				className="w-auto h-auto border-radius: 53rem mb-8"
 				priority
 			/>
 			<p className="mb-8 text-center text-4xl text-blue-300">
