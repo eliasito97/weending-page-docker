@@ -8,7 +8,7 @@ function Location() {
 		<div className="flex flex-col text-center items-center justify-center m-5 mb-10">
 			<div className="flex flex-col items-center text-center justify-center text-2xl">
 				<Image
-					src={"/icons/recepcion.png"}
+					src={"/assets/tarek/iconos/recepcion.jpg"}
 					alt={"Frame 1"}
 					width={1200}
 					height={1200}
@@ -18,7 +18,7 @@ function Location() {
 				<p className="font-semibold text-5xl mb-10 text-blue-900">
 					Recepción
 				</p>
-				<p className="text-4xl text-blue-300 mb-2">Hora: 18:00 p.m.</p>
+				<p className="text-4xl text-blue-300 mb-2">Hora: 12:30 p.m.</p>
 				<p className="text-4xl text-blue-300 mb-2">La Orquídea</p>
 				<p className="text-4xl text-blue-300 mb-10">
 					Av. D'Orbigny 320
@@ -31,7 +31,7 @@ function Location() {
 					/>
 				</div>
 				<Image
-					src={"/assets/banner2.jpg"}
+					src={"/assets/tarek/tarek12.jpg"}
 					alt={"Frame 1"}
 					width={1200}
 					height={1200}
@@ -43,7 +43,7 @@ function Location() {
 				</p>
 				<p className="text-4xl text-blue-300 mb-10">Semi Formal</p>
 				<Image
-					src={"/icons/vestimenta.png"}
+					src={"/assets/tarek/iconos/vestimenta.png"}
 					alt={"Frame 1"}
 					width={1200}
 					height={1200}

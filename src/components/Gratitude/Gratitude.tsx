@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { PiCrossLight } from "react-icons/pi";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
+import "swiper/swiper-bundle.css";
 export function Gratitude() {
 	return (
 		<div className="container flex mx-auto px-5 flex-col justify-center items-center text-center mb-10">
@@ -28,27 +30,74 @@ export function Gratitude() {
 				</p>
 				<p className="mb-10 md:mt-8 text-4xl">
 					Gonzalo Dante Chavarria Arevalo{" "}
-					<PiCrossLight className="inline text-black" />
+					<PiCrossLight className="inline text-black"/>
 				</p>
 				<p className="mb-10 md:mt-8 text-4xl">Monica jorge Bouchabki Lens</p>
 			</div>
-			<div className="grid grid-cols-2 mb-10 gap-5 md:grid-cols-2">
-				<Image
-					src={"/assets/tarek/tarek2.jpg"}
-					alt={"Image 1"}
-					width={1200}
-					height={1200}
-					className="w-full h-full rounded-xl "
-					priority
-				/>
-				<Image
-					src={"/assets/tarek/tarek3.jpg"}
-					alt={"Image 2"}
-					width={1200}
-					height={1200}
-					className="w-full h-full rounded-xl"
-					priority
-				/>
+			<div className="mb-10 w-full">
+				<Swiper
+					spaceBetween={60}
+					slidesPerView={3}
+					navigation
+					loop={true}
+					pagination={{clickable: true}}
+					className="rounded-xl"
+				>
+					<SwiperSlide>
+						<Image
+							src={"/assets/tarek/tarek4.jpg"}
+							width={1000}
+							height={500}
+							className="rounded-xl"
+							priority
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<Image
+							src={"/assets/tarek/tarek7.jpg"}
+							width={1000}
+							height={500}
+							className="rounded-xl"
+							priority
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<Image
+							src={"/assets/tarek/tarek.jpg"}
+							width={1000}
+							height={500}
+							className="rounded-xl"
+							priority
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<Image
+							src={"/assets/tarek/tarek9.jpg"}
+							width={1000}
+							height={500}
+							className="rounded-xl"
+							priority
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<Image
+							src={"/assets/tarek/tarek11.jpg"}
+							width={1000}
+							height={500}
+							className="rounded-xl"
+							priority
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<Image
+							src={"/assets/tarek/tarek13.jpg"}
+							width={360}
+							height={360}
+							className="rounded-xl"
+							priority
+						/>
+					</SwiperSlide>
+				</Swiper>
 			</div>
 		</div>
 	);

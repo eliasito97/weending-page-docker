@@ -9,7 +9,8 @@ function CountDown() {
 	const [seconds, setSeconds] = useState(0);
 
 	useEffect(() => {
-		const target = new Date("02/17/2024 18:00:00");
+		// Usa formato ISO para mayor compatibilidad
+		const target = new Date("2025-01-11T14:00:00");
 
 		const interval = setInterval(() => {
 			const now = new Date();
@@ -32,6 +33,7 @@ function CountDown() {
 
 		return () => clearInterval(interval);
 	}, []);
+
 	return (
 		<div className="flex flex-col mb-10">
 			<div className="text-center flex-1 text-blue-900">

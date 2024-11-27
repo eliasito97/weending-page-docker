@@ -22,8 +22,8 @@ export default function Home() {
 				<CountDown />
 				<Location />
 				<TimeLine />
-				<WeddingGifts />
-				<WishBox />
+				{/*<WeddingGifts />*/}
+				{/*<WishBox />*/}
 				<Attendance />
 			</main>
 		</>

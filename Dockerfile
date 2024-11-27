@@ -14,6 +14,9 @@ COPY package.json package-lock.json ./
 # Instalar dependencias
 RUN npm install next@14.0.4 && npm install
 
+RUN npm install swiper
+
+
 # Construir la aplicación
 COPY . .
 

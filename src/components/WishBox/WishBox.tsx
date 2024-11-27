@@ -3,6 +3,7 @@ import Image from "next/image";
 
 function WishBox() {
 	return (
+
 		<div className="flex flex-col text-center items-center justify-center m-5">
 			<Image
 				src={"/assets/wish1.jpeg"}

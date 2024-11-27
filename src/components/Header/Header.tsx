@@ -24,24 +24,27 @@ export function Header() {
 				<p className="mb-10 text-blue-300">
 					Presiona el
 					<span className="pr-3 pl-4">
-						<FaHeart className="inline text-blue-900 text-1xl" />
+						<FaHeart className="inline text-blue-900 text-1xl"/>
 					</span>
 					para escuchar nuestra canción
 				</p>
-				<MusicPlayer />
+				<MusicPlayer/>
 			</div>
-			<Image
-				src={"/assets/tarek/tarek1.jpg"}
-				alt={"Frame 1"}
-				width={1200}
-				height={1200}
-				className="w-auto h-auto border-radius: 53rem mb-8"
-				priority
+			<video
+				src="/assets/tarek/videogay1.mp4" // Ruta del video
+				controls // Habilita los controles del reproductor
+				autoPlay={true} // Indica si se reproduce automáticamente
+				loop={true} // Reproduce en bucle
+				muted={true} // Silencia el video por defecto
+				height={500}
+				width={400}
+				className="rounded-xl mb-8" // Clases Tailwind
 			/>
-			<p className="mb-8 text-center text-4xl text-blue-300">
-				... Juntos hicimos de un día cualquiera, una fecha para guardar
-				en el calendario...
-			</p>
+				<p className="mb-8 text-center text-4xl text-blue-300">
+					... "En este día especial, queremos rodearnos de nuestras familias y amigos para celebrar el amor que nos une.
+					Compartan con nosotros en nuestra boda CIVIL".
+					...
+				</p>
 		</div>
-	);
+);
 }

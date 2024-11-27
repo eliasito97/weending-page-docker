@@ -13,50 +13,50 @@ function TimeLine() {
 				<section className="grid grid-cols-5 gap-3 mb-2">
 					<div className="">
 						<Image
-							src={"/icons/ceremonia.png"}
+							src={"/assets/tarek/iconos/ceremonia.png"}
 							alt={"Frame 1"}
-							width={1200}
-							height={1200}
+							width={1500}
+							height={1500}
 							className="w-10 h-10 rounded-2xl"
 							priority
 						/>
 					</div>
 					<div className="">
 						<Image
-							src={"/icons/recepcion.png"}
+							src={"/assets/tarek/iconos/recepcion.jpg"}
 							alt={"Frame 1"}
-							width={1200}
-							height={1200}
+							width={1500}
+							height={1500}
 							className="w-10 h-10 rounded-2xl"
 							priority
 						/>
 					</div>
 					<div className="">
 						<Image
-							src={"/icons/brindis.png"}
+							src={"/assets/tarek/iconos/brindis.png"}
 							alt={"Frame 1"}
-							width={1200}
-							height={1200}
+							width={1500}
+							height={1500}
 							className="w-10 h-10 rounded-2xl"
 							priority
 						/>
 					</div>
 					<div className="">
 						<Image
-							src={"/icons/comida.png"}
+							src={"/assets/tarek/iconos/comida.png"}
 							alt={"Frame 1"}
-							width={1200}
-							height={1200}
+							width={1500}
+							height={1500}
 							className="w-10 h-10 rounded-2xl"
 							priority
 						/>
 					</div>
 					<div className="">
 						<Image
-							src={"/icons/fin.png"}
+							src={"/assets/tarek/iconos/fin.png"}
 							alt={"Frame 1"}
-							width={1200}
-							height={1200}
+							width={1500}
+							height={1500}
 							className="w-10 h-10 rounded-2xl"
 							priority
 						/>
@@ -106,7 +106,7 @@ function TimeLine() {
 			</div>
 			<div className="grid grid-cols-2 m-1 gap-5 md:grid-cols-2">
 				<Image
-					src={"/assets/timeline1.jpg"}
+					src={"/assets/tarek/tarek8.jpg"}
 					alt={"Image 1"}
 					width={1200}
 					height={1200}
@@ -114,7 +114,7 @@ function TimeLine() {
 					priority
 				/>
 				<Image
-					src={"/assets/timeline2.jpg"}
+					src={"/assets/tarek/tarek1.jpg"}
 					alt={"Image 2"}
 					width={1200}
 					height={1200}

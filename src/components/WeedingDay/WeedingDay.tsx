@@ -8,10 +8,10 @@ function WeedingDay() {
 			</div>
 			<div className="pb-7 text-4xl font-semibold text-blue-900">
 				Febrero
-				<div className="text-6xl text-blue-900">17</div>
+				<div className="text-6xl text-blue-900">11</div>
 			</div>
 			<div className="border-y-2 border-blue-900 text-3xl text-blue-300">
-				2 0 2 4
+				2 0 2 5
 			</div>
 		</div>
 	);
