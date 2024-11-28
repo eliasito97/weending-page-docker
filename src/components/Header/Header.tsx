@@ -1,6 +1,12 @@
 import Image from "next/image";
 import MusicPlayer from "../MusicPlayer/MusicPlayer";
 import { FaHeart } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+const variants = {
+	hidden: { opacity: 0, y: 50 },
+	visible: { opacity: 1, y: 0 },
+};
 export function Header() {
 	return (
 		<div className="container flex flex-col items-center mx-auto px-5 mb-10">

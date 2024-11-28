@@ -16,6 +16,8 @@ RUN npm install next@14.0.4 && npm install
 
 RUN npm install swiper
 
+RUN npm install framer-motion
+
 
 # Construir la aplicación
 COPY . .
