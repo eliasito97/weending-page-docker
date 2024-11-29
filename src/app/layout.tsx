@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Allura } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const inter = Allura({ weight: "400", subsets: ["latin"] });
+const inter = Playfair_Display({ weight: "400", style:['italic'],subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Nuestra Boda T & D",

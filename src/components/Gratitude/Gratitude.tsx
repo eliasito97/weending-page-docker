@@ -3,7 +3,10 @@ import { PiCrossLight } from "react-icons/pi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
+import Modal from "@/components/Modal/Modal";
+import {useState} from "react";
 export function Gratitude() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
 	return (
 		<div className="container flex mx-auto px-5 flex-col justify-center items-center text-center mb-10">
 			<Image
@@ -41,6 +44,7 @@ export function Gratitude() {
 					navigation
 					loop={true}
 					pagination={{clickable: true}}
+					onClick={() => setIsModalOpen(true)}
 					className="rounded-xl"
 				>
 					<SwiperSlide>
@@ -99,6 +103,15 @@ export function Gratitude() {
 					</SwiperSlide>
 				</Swiper>
 			</div>
+			<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+				<Image
+					src={"/assets/tarek/tarekgay.jpg"}
+					width={360}
+					height={360}
+					className="rounded-xl"
+					priority
+				/>
+			</Modal>
 		</div>
 	);
 }

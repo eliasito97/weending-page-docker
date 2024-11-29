@@ -1,18 +1,23 @@
 import React from "react";
-import Image from "next/image";
-import MapButton from "../MapButton/MapButton";
-import { SlLocationPin } from "react-icons/sl";
 
-function Modal() {
+const Modal = ({ isOpen, onClose, children }) => {
+	if (!isOpen) return null;
+
 	return (
-		<div className="flex flex-col justify-center items-center text-center m-5 mb-10">
-			<div className="text-center mb-8">
-				<h2 className="text-5xl font-semibold text-blue-900">
-					GAAAA
-				</h2>
+		<div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+			<div className="relative w-full max-w-md p-6 bg-white rounded-lg shadow-lg">
+				{/* Close Button */}
+				<button
+					className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+					onClick={onClose}
+				>
+					&times;
+				</button>
+				{/* Modal Content */}
+				{children}
 			</div>
 		</div>
 	);
-}
+};
 
 export default Modal;
