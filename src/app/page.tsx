@@ -9,6 +9,7 @@ import Location from "@/components/Location/Location";
 import TimeLine from "@/components/TimeLine/TimeLine";
 import Attendance from "@/components/Attendance/Attendance";
 import { motion } from "framer-motion";
+import WeddingGifts from "@/components/WeddingGifts/WeddingGifts";
 
 const variants = {
 	hidden: { opacity: 0, y: 50 },
@@ -18,7 +19,7 @@ export default function Home() {
 	return (
 		<>
 			<TransitionPage />
-			<main >
+			<main>
 				<motion.div
 					className="text-center mb-10"
 					initial="hidden"
@@ -69,6 +70,7 @@ export default function Home() {
 				>
 					<Location/>
 				</motion.div>
+
 				<motion.div
 					className="text-center mb-10"
 					initial="hidden"
@@ -78,6 +80,16 @@ export default function Home() {
 					variants={variants}
 				>
 					<TimeLine/>
+				</motion.div>
+				<motion.div
+					className="text-center mb-10"
+					initial="hidden"
+					whileInView="visible"
+					viewport={{once: false, amount: 0.2}}
+					transition={{duration: 0.8}}
+					variants={variants}
+				>
+					<WeddingGifts/>
 				</motion.div>
 				<motion.div
 					className="text-center mb-10"
