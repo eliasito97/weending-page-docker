@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Playfair_Display({ weight: "400", style:['italic'],subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Nuestra Boda T & D",
-	description: "Pagina creada por Alex Wong",
+	title: "Nuestra Boda D & T",
+	description: "Pagina creada por Batman",
 };
 
 export default function RootLayout({

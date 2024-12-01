@@ -36,21 +36,21 @@ function CountDown() {
 
 	return (
 		<div className="flex flex-col mb-10">
-			<div className="text-center flex-1 text-blue-900">
+			<div className="text-center flex-1 title">
 				<section className="grid grid-cols-4 gap-3 p-4">
-					<div className="bg-sky-100 rounded p-3 md:p-10 flex flex-col items-center text-2xl font-semibold">
+					<div className="cuadrados rounded p-3 md:p-10 flex flex-col items-center text-2xl font-semibold">
 						{days}
 						<p className="text-xl">Días</p>
 					</div>
-					<div className="bg-sky-100 rounded p-3 md:p-10 flex flex-col items-center text-2xl font-semibold">
+					<div className="cuadrados rounded p-3 md:p-10 flex flex-col items-center text-2xl font-semibold">
 						{hours}
 						<p className="text-xl">Horas</p>
 					</div>
-					<div className="bg-sky-100 rounded p-3 md:p-10 flex flex-col items-center text-2xl font-semibold">
+					<div className="cuadrados rounded p-3 md:p-10 flex flex-col items-center text-2xl font-semibold">
 						{minutes}
 						<p className="text-xl">Minutos</p>
 					</div>
-					<div className="bg-sky-100 rounded p-3 md:p-10 flex flex-col items-center text-2xl font-semibold">
+					<div className="cuadrados rounded p-3 md:p-10 flex flex-col items-center text-2xl font-semibold">
 						{seconds}
 						<p className="text-xl">Segundos</p>
 					</div>

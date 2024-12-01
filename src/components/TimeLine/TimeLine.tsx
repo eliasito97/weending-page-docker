@@ -5,7 +5,7 @@ function TimeLine() {
 	return (
 		<div className="flex flex-col justify-center items-center text-center m-5 mb-10">
 			<div className="text-center mb-8">
-				<h2 className="text-5xl font-semibold text-blue-900">
+				<h2 className="text-5xl font-semibold title">
 					Itinerario
 				</h2>
 			</div>
@@ -71,34 +71,34 @@ function TimeLine() {
 				</section>
 				<section className="grid grid-cols-5 gap-3">
 					<div className="">
-						<p className="text-sm font-bold text-blue-900">
+						<p className="text-sm font-bold title">
 							16 : 00 p.m.
 						</p>
-						<p className="text-sm text-blue-400">Ceremonia Civil</p>
+						<p className="text-sm title">Ceremonia Civil</p>
 					</div>
 					<div className="">
-						<p className="text-sm font-bold text-blue-900">
+						<p className="text-sm font-bold title">
 							18 : 00 p.m.
 						</p>
-						<p className="text-sm text-blue-400">Recepción</p>
+						<p className="text-sm title">Recepción</p>
 					</div>
 					<div className="">
-						<p className="text-sm font-bold text-blue-900">
+						<p className="text-sm font-bold title">
 							20 : 00 p.m.
 						</p>
-						<p className="text-sm text-blue-400">Brindis</p>
+						<p className="text-sm title">Brindis</p>
 					</div>
 					<div className="">
-						<p className="text-sm font-bold text-blue-900">
+						<p className="text-sm font-bold title">
 							21 : 00 p.m.
 						</p>
-						<p className="text-sm text-blue-400">Comida</p>
+						<p className="text-sm title">Comida</p>
 					</div>
 					<div className="">
-						<p className="text-sm font-bold text-blue-900">
+						<p className="text-sm font-bold title">
 							2 : 00 a.m.
 						</p>
-						<p className="text-sm font-bold text-blue-900">
+						<p className="text-sm title">
 							Felices por siempre
 						</p>
 					</div>
@@ -108,16 +108,16 @@ function TimeLine() {
 				<Image
 					src={"/assets/tarek/tarek8.jpg"}
 					alt={"Image 1"}
-					width={1200}
-					height={1200}
+					width={1000}
+					height={1000}
 					className="w-full h-full rounded-xl"
 					priority
 				/>
 				<Image
 					src={"/assets/tarek/tarek1.jpg"}
 					alt={"Image 2"}
-					width={1200}
-					height={1200}
+					width={1000}
+					height={1000}
 					className="w-full h-full rounded-xl"
 					priority
 				/>

@@ -7,6 +7,12 @@ import {useState} from "react";
 
 function Location() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [modalContent, setModalContent] = useState<React.ReactNode>(null);
+
+	const openModalWithContent = (content: React.ReactNode) => {
+		setModalContent(content);
+		setIsModalOpen(true);
+	};
 	return (
 		<div className="flex flex-col text-center items-center justify-center m-5 mb-10">
 			<div className="flex flex-col items-center text-center justify-center text-2xl">
@@ -18,16 +24,16 @@ function Location() {
 					className="w-20 h-20 mb-10"
 					priority
 				/>
-				<p className="font-semibold text-5xl mb-10 text-blue-900">
+				<p className="font-semibold text-5xl mb-10 title">
 					Recepción
 				</p>
-				<p className="text-4xl text-blue-300 mb-2">Hora: 12:30 p.m.</p>
-				<p className="text-4xl text-blue-300 mb-2">La Orquídea</p>
-				<p className="text-4xl text-blue-300 mb-10">
+				<p className="text-4xl text mb-2">Hora: 12:30 p.m.</p>
+				<p className="text-4xl text mb-2">La Orquídea</p>
+				<p className="text-4xl text mb-10">
 					Av. D'Orbigny 320
 				</p>
 				<div className="flex flex-row mb-10">
-					<SlLocationPin className="inline text-5xl text-blue-400" />
+					<SlLocationPin className="inline text-5xl title" />
 					<MapButton
 						link="https://maps.app.goo.gl/C77L7Hq1ZxCoGshSA"
 						label="Ver Mapa"
@@ -36,16 +42,32 @@ function Location() {
 				<Image
 					src={"/assets/tarek/tarek12.jpg"}
 					alt={"Frame 1"}
-					width={1200}
-					height={1200}
+					width={700}
+					height={700}
 					className="w-auto h-auto rounded-2xl mb-10"
-					onClick={() => setIsModalOpen(true)}
+					onClick={() =>
+						openModalWithContent(
+							<>
+								<video
+									src="/assets/tarek/videogay2.mp4" // Ruta del video
+									controls // Habilita los controles del reproductor
+									autoPlay={true} // Indica si se reproduce automáticamente
+									loop={true} // Reproduce en bucle
+									muted={true} // Silencia el video por defecto
+									height={500}
+									width={400}
+									className="rounded-xl mb-8" // Clases Tailwind
+								/>
+								<p className="title font-semibold text-center mt-4 text-4xl">Disfruta de nuestra imagen especial</p>
+							</>
+						)
+					}
 					priority
 				/>
-				<p className="font-semibold text-5xl mb-10 text-blue-900">
+				<p className="font-semibold text-5xl mb-10 title">
 					Vestimenta
 				</p>
-				<p className="text-4xl text-blue-300 mb-10">Semi Formal</p>
+				<p className="text-4xl text mb-10">Semi Formal</p>
 				<Image
 					src={"/assets/tarek/iconos/vestimenta.png"}
 					alt={"Frame 1"}
@@ -54,19 +76,12 @@ function Location() {
 					className="w-20 h-20 mb-10"
 					priority
 				/>
-				<p className="text-4xl text-blue-300">No usar color blanco</p>
+
 			</div>
 			<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-				<video
-					src="/assets/tarek/videogay2.mp4" // Ruta del video
-					controls // Habilita los controles del reproductor
-					autoPlay={true} // Indica si se reproduce automáticamente
-					loop={true} // Reproduce en bucle
-					muted={true} // Silencia el video por defecto
-					height={500}
-					width={400}
-					className="rounded-xl mb-8" // Clases Tailwind
-				/>
+				<div className="flex flex-col items-center">
+					{modalContent}
+				</div>
 			</Modal>
 		</div>
 	);

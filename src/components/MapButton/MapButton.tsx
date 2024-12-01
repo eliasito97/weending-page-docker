@@ -13,7 +13,7 @@ const MapButton: React.FC<MapButtonProps> = ({ link, label }) => {
 	return (
 		<div className="m-2 ">
 			<button
-				className="bg-sky-100 py-2 px-4 rounded-3xl text-blue-400 text-3xl"
+				className="cuadrados py-2 px-4 rounded-3xl buttons text-4xl"
 				onClick={handleClick}>
 				{label}
 			</button>

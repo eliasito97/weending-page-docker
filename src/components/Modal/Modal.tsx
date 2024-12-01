@@ -3,20 +3,37 @@ import React from "react";
 const Modal = ({ isOpen, onClose, children }) => {
 	if (!isOpen) return null;
 
+	const handleOutsideClick = (e) => {
+		if (e.target.id === "modal-overlay") {
+			onClose();
+		}
+	};
 	return (
-		<div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-			<div className="relative w-full max-w-md p-6 bg-white rounded-lg shadow-lg">
-				{/* Close Button */}
+		<div
+			id="modal-overlay"
+			onClick={handleOutsideClick}
+			className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+		>
+			<div
+				className="relative w-full max-w-md modal_tarek rounded-lg shadow-lg flex flex-col items-center p-6"
+				onClick={(e) => e.stopPropagation()} // Evita que el clic dentro del modal cierre el modal
+			>
+				{/* Botón de cerrar */}
 				<button
-					className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+					className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
 					onClick={onClose}
 				>
 					&times;
 				</button>
-				{/* Modal Content */}
-				{children}
+
+				{/* Contenido del Creditos */}
+				<div className="w-full flex justify-center mb-4">
+					{children}
+				</div>
+
 			</div>
 		</div>
+
 	);
 };
 

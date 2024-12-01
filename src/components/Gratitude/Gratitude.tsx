@@ -5,8 +5,15 @@ import { Navigation, Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
 import Modal from "@/components/Modal/Modal";
 import {useState} from "react";
+import React from "react";
 export function Gratitude() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [modalContent, setModalContent] = useState<React.ReactNode>(null);
+
+	const openModalWithContent = (content: React.ReactNode) => {
+		setModalContent(content);
+		setIsModalOpen(true);
+	};
 	return (
 		<div className="container flex mx-auto px-5 flex-col justify-center items-center text-center mb-10">
 			<Image
@@ -17,8 +24,8 @@ export function Gratitude() {
 				className="mb-10 w-20 h-20"
 				priority
 			/>
-			<div className="max-w-3xl text-center items-center justify-center text-blue-300 mb-10">
-				<p className="mb-10 md:mt-8 text-5xl font-semibold text-blue-900">
+			<div className="max-w-3xl text-center items-center justify-center text mb-10">
+				<p className="mb-10 md:mt-8 text-5xl font-semibold title">
 					Padres de la Novia
 				</p>
 				<p className="mb-10 md:mt-8 text-4xl">
@@ -28,12 +35,12 @@ export function Gratitude() {
 				<p className="mb-10 md:mt-8 text-4xl">
 					Lenny Vargas Fernandez
 				</p>
-				<p className="mb-10 md:mt-8 font-semibold text-5xl text-blue-900">
+				<p className="mb-10 md:mt-8 font-semibold text-5xl title">
 					Padres del Novio
 				</p>
 				<p className="mb-10 md:mt-8 text-4xl">
 					Gonzalo Dante Chavarria Arevalo{" "}
-					<PiCrossLight className="inline text-black"/>
+					<PiCrossLight className="inline title"/>
 				</p>
 				<p className="mb-10 md:mt-8 text-4xl">Monica jorge Bouchabki Lens</p>
 			</div>
@@ -44,7 +51,20 @@ export function Gratitude() {
 					navigation
 					loop={true}
 					pagination={{clickable: true}}
-					onClick={() => setIsModalOpen(true)}
+					onClick={() =>
+						openModalWithContent(
+							<>
+								<Image
+									src={"/assets/tarek/tarekgay.jpg"}
+									width={360}
+									height={360}
+									className="rounded-xl"
+									priority
+								/>
+								<p className="title font-semibold text-center mt-4 text-4xl">Disfruta de nuestra imagen especial</p>
+							</>
+						)
+					}
 					className="rounded-xl"
 				>
 					<SwiperSlide>
@@ -56,6 +76,15 @@ export function Gratitude() {
 							priority
 						/>
 					</SwiperSlide>
+					{/*<SwiperSlide>*/}
+					{/*	<Image*/}
+					{/*		src={"/assets/tarek/aaaaa.jpg"}*/}
+					{/*		width={1000}*/}
+					{/*		height={500}*/}
+					{/*		className="rounded-xl"*/}
+					{/*		priority*/}
+					{/*	/>*/}
+					{/*</SwiperSlide>*/}
 					<SwiperSlide>
 						<Image
 							src={"/assets/tarek/tarek7.jpg"}
@@ -103,15 +132,13 @@ export function Gratitude() {
 					</SwiperSlide>
 				</Swiper>
 			</div>
-			<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-				<Image
-					src={"/assets/tarek/tarekgay.jpg"}
-					width={360}
-					height={360}
-					className="rounded-xl"
-					priority
-				/>
-			</Modal>
+			<div className="text-center">
+				<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+					<div className="flex flex-col items-center">
+						{modalContent}
+					</div>
+				</Modal>
+			</div>
 		</div>
 	);
 }

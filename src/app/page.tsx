@@ -18,7 +18,7 @@ export default function Home() {
 	return (
 		<>
 			<TransitionPage />
-			<main>
+			<main >
 				<motion.div
 					className="text-center mb-10"
 					initial="hidden"

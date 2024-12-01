@@ -4,9 +4,53 @@
 
 html {
 	scroll-behavior: smooth;
-	background-color: white;
+	background-color: #9fa395;
+}
+.title{
+	color: #4c5733;
+}
+.text{
+	color:#e0d3c3;
+}
+.buttons
+{
+	color: #707553;
+}
+.cuadrados
+{
+	background-color: #e0d3c3;
+}
+.border1{
+	border-color: #4c5733;
+}
+.heard{
+	color: #4c5733;
+}
+.modal_tarek
+{
+	background-color: #9fa395;
+}
+.imagenaux{
+	width: 1200px;
+	height: 250px;
+}
+.imagenaux1{
+	width: 1200px;
+	height: 500px;
+}
+@keyframes scroll-up {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
 }
 
+.absolute {
+	position: absolute;
+	animation: scroll-up 20s linear infinite;
+}
 .swiper-scrollbar-drag {
 	background: #727c73;
 }
