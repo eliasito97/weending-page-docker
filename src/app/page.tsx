@@ -17,13 +17,13 @@ export default function Home() {
 			<TransitionPage />
 			<main>
 				<Header />
-				<Gratitude />
+				{/*<Gratitude />*/}
 				<GetMarry />
-				<CountDown />
+				{/*<CountDown />*/}
 				<Location />
-				<TimeLine />
-				<WeddingGifts />
-				<WishBox />
+				{/*<TimeLine />*/}
+				{/*<WeddingGifts />*/}
+				{/*<WishBox />*/}
 				<Attendance />
 			</main>
 		</>

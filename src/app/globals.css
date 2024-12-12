@@ -4,9 +4,21 @@
 
 html {
 	scroll-behavior: smooth;
-	background-color: white;
+	background-color: #ffffff;
 }
-
+.title{
+	color: #000000;
+}
+.text{
+	color: #000000;
+}
+.ayuda{
+	padding-right: 120px;
+}
+.name
+{
+	color: #0163d3;
+}
 .swiper-scrollbar-drag {
 	background: #727c73;
 }
