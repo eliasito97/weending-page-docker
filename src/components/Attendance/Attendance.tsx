@@ -40,9 +40,9 @@ function Attendance() {
 				<Image
 					src={"/assets/2.png"}
 					alt={"Frame 2"}
-					width={1200}
-					height={1200}
-					className="w-auto h-auto rounded-2xl"
+					width={500}
+					height={500}
+					className="rounded-2xl"
 					priority
 				/>
 			</div>
