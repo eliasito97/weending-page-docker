@@ -12,7 +12,7 @@ export function Header() {
 				className="w-auto h-auto mb-10 rounded-2xl ayuda"
 				priority
 			/>
-			<div className="max-w-3xl text-center items-center">
+			<div className="max-w-3xl ayuda2 text-center items-center">
 				<h1 className="mb-10 text-5xl title">
 					Nuestra Boda
 				</h1>
@@ -38,7 +38,7 @@ export function Header() {
 			{/*	className="w-auto h-auto rounded-2xl mb-8"*/}
 			{/*	priority*/}
 			{/*/>*/}
-			<p className="mb-8 text-center text-4xl title">
+			<p className="text-center text-4xl title">
 				TENEMOS EL HONOR DE INVITARLOS
 				A NUESTRA CEREMONIA RELIGIOSA Y CIVIL EL PROXIMO
 			</p>

@@ -41,7 +41,7 @@ function Attendance() {
 				alt={"Frame 2"}
 				width={1200}
 				height={1200}
-				className="w-auto h-auto mb-10 rounded-2xl"
+				className="w-auto h-auto rounded-2xl ayuda1"
 				priority
 			/>
 		</div>

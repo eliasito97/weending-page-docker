@@ -5,7 +5,7 @@ import {SlLocationPin} from "react-icons/sl";
 
 function Location() {
 	return (
-		<div className="flex flex-col text-center items-center justify-center m-5 mb-10">
+		<div className="flex flex-col text-center items-center justify-center mb-10">
 			<div className="flex flex-col items-center text-center justify-center text-2xl">
 
 				<p className="font-semibold text-5xl mb-10 title">
@@ -23,7 +23,9 @@ function Location() {
 						label="Ver Mapa"
 					/>
 				</div>
-
+				<p className="text-4xl  title">
+					PASE PARA 2 PERSONAS
+				</p>
 			</div>
 		</div>
 	);
