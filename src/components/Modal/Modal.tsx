@@ -1,5 +1,4 @@
-import React,  { ReactNode}  from "react";
-
+import React, { ReactNode, MouseEvent } from "react";
 interface ModalProps {
 	isOpen: boolean;
 	onClose: () => void;
