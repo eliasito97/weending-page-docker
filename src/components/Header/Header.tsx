@@ -23,7 +23,7 @@ export function Header() {
 				<p className="text-4xl text mb-10">
 					SU PRESENCIA Y BUENOS DESEOS SON
 					SUFICIENTES PARA NOSOTROS, EN CASO
-					QUE DESEEN HACERLO UN OBSEQUIO.
+					QUE DESEEN HACERNOS UN OBSEQUIO.
 				</p>
 				<Image
 					src={"/qr.jpg"}
