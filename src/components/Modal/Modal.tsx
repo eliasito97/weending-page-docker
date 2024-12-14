@@ -1,5 +1,9 @@
 import React from "react";
-
+interface ModalProps {
+	isOpen: boolean;
+	onClose: () => void;
+	children: ReactNode;
+}
 const Modal = ({ isOpen, onClose, children }) => {
 	if (!isOpen) return null;
 
