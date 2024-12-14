@@ -60,6 +60,7 @@ function Attendance() {
 									src={"/assets/tarek/batman.png"}
 									width={350}
 									height={350}
+									alt={"Frame 1"}
 									className="rounded-xl"
 									priority
 								/>
