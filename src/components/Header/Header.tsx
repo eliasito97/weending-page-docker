@@ -24,8 +24,8 @@ export function Header() {
 				</h2>
 			</div>
 			<p className="text-center text-4xl title">
-				TENEMOS EL HONOR DE INVITARLOS
-				A NUESTRA CEREMONIA RELIGIOSA Y CIVIL EL PROXIMO
+				TENEMOS EL AGRADO DE INVITARLOS
+				A NUESTRA CEREMONIA RELIGIOSA Y CIVIL EL PRÓXIMO
 			</p>
 		</div>
 	);

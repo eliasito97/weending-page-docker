@@ -11,7 +11,7 @@ function Location() {
 				<p className="font-semibold text-5xl mb-10 title">
 					Recepción Social
 				</p>
-				<p className="text-4xl title mb-2">Salon de eventos "Los Pinos" </p>
+				<p className="text-4xl title mb-2">Salón de eventos "Los Pinos" </p>
 				<p className="text-4xl title mb-2">Av. Tadeo Haenke y Av. J. Manuel Villavicencio</p>
 				<p className="text-4xl title mb-10">
 					Cochabamba, Diciembre 2024
