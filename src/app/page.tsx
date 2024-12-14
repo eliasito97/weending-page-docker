@@ -18,13 +18,13 @@ export default function Home() {
 			<main>
 				<Header />
 				{/*<Gratitude />*/}
-				<GetMarry />
+				{/*<GetMarry />*/}
 				{/*<CountDown />*/}
-				<Location />
+				{/*<Location />*/}
 				{/*<TimeLine />*/}
 				{/*<WeddingGifts />*/}
 				{/*<WishBox />*/}
-				<Attendance />
+				{/*<Attendance />*/}
 			</main>
 		</>
 	);
