@@ -26,10 +26,10 @@ export function Header() {
 					QUE DESEEN HACERLO UN OBSEQUIO.
 				</p>
 				<Image
-					src={"/assets/2.png"}
+					src={"/qr.jpg"}
 					alt={"Frame 2"}
-					width={500}
-					height={500}
+					width={400}
+					height={400}
 					className="rounded-2xl"
 					priority
 				/>
