@@ -44,94 +44,94 @@ export function Gratitude() {
 				</p>
 				<p className="mb-10 md:mt-8 text-4xl">Monica jorge Bouchabki Lens</p>
 			</div>
-			<div className="mb-10 w-full">
-				<Swiper
-					spaceBetween={60}
-					slidesPerView={3}
-					navigation
-					loop={true}
-					pagination={{clickable: true}}
-					onClick={() =>
-						openModalWithContent(
-							<>
-								<Image
-									src={"/assets/tarek/tarekgay.jpg"}
-									width={360}
-									height={360}
-									className="rounded-xl"
-									priority
-								/>
-								<p className="title font-semibold text-center mt-4 text-4xl">Disfruta de nuestra imagen especial</p>
-							</>
-						)
-					}
-					className="rounded-xl"
-				>
-					<SwiperSlide>
-						<Image
-							src={"/assets/tarek/tarek4.jpg"}
-							width={1000}
-							height={500}
-							className="rounded-xl"
-							priority
-						/>
-					</SwiperSlide>
-					{/*<SwiperSlide>*/}
-					{/*	<Image*/}
-					{/*		src={"/assets/tarek/aaaaa.jpg"}*/}
-					{/*		width={1000}*/}
-					{/*		height={500}*/}
-					{/*		className="rounded-xl"*/}
-					{/*		priority*/}
-					{/*	/>*/}
-					{/*</SwiperSlide>*/}
-					<SwiperSlide>
-						<Image
-							src={"/assets/tarek/tarek7.jpg"}
-							width={1000}
-							height={500}
-							className="rounded-xl"
-							priority
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Image
-							src={"/assets/tarek/tarek.jpg"}
-							width={1000}
-							height={500}
-							className="rounded-xl"
-							priority
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Image
-							src={"/assets/tarek/tarek9.jpg"}
-							width={1000}
-							height={500}
-							className="rounded-xl"
-							priority
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Image
-							src={"/assets/tarek/tarek11.jpg"}
-							width={1000}
-							height={500}
-							className="rounded-xl"
-							priority
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Image
-							src={"/assets/tarek/tarek13.jpg"}
-							width={360}
-							height={360}
-							className="rounded-xl"
-							priority
-						/>
-					</SwiperSlide>
-				</Swiper>
-			</div>
+			{/*<div className="mb-10 w-full">*/}
+			{/*	<Swiper*/}
+			{/*		spaceBetween={60}*/}
+			{/*		slidesPerView={3}*/}
+			{/*		navigation*/}
+			{/*		loop={true}*/}
+			{/*		pagination={{clickable: true}}*/}
+			{/*		onClick={() =>*/}
+			{/*			openModalWithContent(*/}
+			{/*				<>*/}
+			{/*					<Image*/}
+			{/*						src={"/assets/tarek/tarekgay.jpg"}*/}
+			{/*						width={360}*/}
+			{/*						height={360}*/}
+			{/*						className="rounded-xl"*/}
+			{/*						priority*/}
+			{/*					/>*/}
+			{/*					<p className="title font-semibold text-center mt-4 text-4xl">Disfruta de nuestra imagen especial</p>*/}
+			{/*				</>*/}
+			{/*			)*/}
+			{/*		}*/}
+			{/*		className="rounded-xl"*/}
+			{/*	>*/}
+			{/*		/!*<SwiperSlide>*!/*/}
+			{/*		/!*	<Image*!/*/}
+			{/*		/!*		src={"/assets/tarek/tarek4.jpg"}*!/*/}
+			{/*		/!*		width={1000}*!/*/}
+			{/*		/!*		height={500}*!/*/}
+			{/*		/!*		className="rounded-xl"*!/*/}
+			{/*		/!*		priority*!/*/}
+			{/*		/!*	/>*!/*/}
+			{/*		/!*</SwiperSlide>*!/*/}
+			{/*		/!*<SwiperSlide>*!/*/}
+			{/*		/!*	<Image*!/*/}
+			{/*		/!*		src={"/assets/tarek/aaaaa.jpg"}*!/*/}
+			{/*		/!*		width={1000}*!/*/}
+			{/*		/!*		height={500}*!/*/}
+			{/*		/!*		className="rounded-xl"*!/*/}
+			{/*		/!*		priority*!/*/}
+			{/*		/!*	/>*!/*/}
+			{/*		/!*</SwiperSlide>*!/*/}
+			{/*		/!*<SwiperSlide>*!/*/}
+			{/*		/!*	<Image*!/*/}
+			{/*		/!*		src={"/assets/tarek/tarek7.jpg"}*!/*/}
+			{/*		/!*		width={1000}*!/*/}
+			{/*		/!*		height={500}*!/*/}
+			{/*		/!*		className="rounded-xl"*!/*/}
+			{/*		/!*		priority*!/*/}
+			{/*		/!*	/>*!/*/}
+			{/*		/!*</SwiperSlide>*!/*/}
+			{/*		<SwiperSlide>*/}
+			{/*			<Image*/}
+			{/*				src={"/assets/tarek/tarek.jpg"}*/}
+			{/*				width={1000}*/}
+			{/*				height={500}*/}
+			{/*				className="rounded-xl"*/}
+			{/*				priority*/}
+			{/*			/>*/}
+			{/*		</SwiperSlide>*/}
+			{/*		<SwiperSlide>*/}
+			{/*			<Image*/}
+			{/*				src={"/assets/tarek/tarek9.jpg"}*/}
+			{/*				width={1000}*/}
+			{/*				height={500}*/}
+			{/*				className="rounded-xl"*/}
+			{/*				priority*/}
+			{/*			/>*/}
+			{/*		</SwiperSlide>*/}
+			{/*		<SwiperSlide>*/}
+			{/*			<Image*/}
+			{/*				src={"/assets/tarek/tarek11.jpg"}*/}
+			{/*				width={1000}*/}
+			{/*				height={500}*/}
+			{/*				className="rounded-xl"*/}
+			{/*				priority*/}
+			{/*			/>*/}
+			{/*		</SwiperSlide>*/}
+			{/*		/!*<SwiperSlide>*!/*/}
+			{/*		/!*	<Image*!/*/}
+			{/*		/!*		src={"/assets/tarek/tarek13.jpg"}*!/*/}
+			{/*		/!*		width={360}*!/*/}
+			{/*		/!*		height={360}*!/*/}
+			{/*		/!*		className="rounded-xl"*!/*/}
+			{/*		/!*		priority*!/*/}
+			{/*		/!*	/>*!/*/}
+			{/*		/!*</SwiperSlide>*!/*/}
+			{/*	</Swiper>*/}
+			{/*</div>*/}
 			<div className="text-center">
 				<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
 					<div className="flex flex-col items-center">

@@ -28,7 +28,7 @@ function Attendance() {
 				Tu presencia es importante para nosotros, por favor confirma tu
 				asistencia hasta el 15 de Diciembre
 			</p>
-			<div className="flex flex-row mb-10">
+			<div className="flex md:flex-row flex-col mb-10 items-center">
 				<CiCalendarDate className="inline text-5xl title"/>
 				<MapButton
 					link="https://api.whatsapp.com/send?phone=59170171064&text=%C2%A1Hola%20Tarek!%20%F0%9F%91%8B%20%C2%A1Confirmo%20mi%20asistencia%20a%20la%20boda!%20%F0%9F%8E%89%20Estoy%20emocionado%2Fa%20de%20celebrar%20este%20d%C3%ADa%20tan%20especial%20junto%20a%20ustedes.%20%C2%A1Nos%20vemos%20pronto!%20%F0%9F%91%B0%F0%9F%A4%B5%20%20Nombre%3A"
@@ -65,10 +65,6 @@ function Attendance() {
 								/>
 								<div
 									className="relative h-32 w-full overflow-hidden text-center"
-									style={{
-										position: "relative",
-										animation: "scroll-up 20s linear infinite",
-									}}
 								>
 								<Creditos/>
 								</div>
@@ -82,15 +78,17 @@ function Attendance() {
 					</p>
 				</button>
 			</div>
+			<div className="relative md:ml-60 md:-top-10 mt-5 md:mt-0">
+				<Image
+					src={"/assets/tarek/flores1.png"}
+					alt={"Frame 1"}
+					width={2500}
+					height={2500}
+					className="imagenaux1 mb-10 rounded-2xl"
+					priority
+				/>
+			</div>
 
-			<Image
-				src={"/assets/tarek/flores1.png"}
-				alt={"Frame 1"}
-				width={2500}
-				height={2500}
-				className="imagenaux1 mb-10 rounded-2xl"
-				priority
-			/>
 			<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
 				<div className="flex flex-col items-center">
 					{modalContent}

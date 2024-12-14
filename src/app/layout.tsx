@@ -6,7 +6,7 @@ const inter = Playfair_Display({ weight: "400", style:['italic'],subsets: ["lati
 
 export const metadata: Metadata = {
 	title: "Nuestra Boda D & T",
-	description: "Pagina creada por Batman",
+	description: "Pagina creada por Elias Chavarria",
 };
 
 export default function RootLayout({

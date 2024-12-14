@@ -3,10 +3,10 @@ import { IoGiftOutline } from "react-icons/io5";
 
 const ImageDownloader = () => {
 	const downloadImage = () => {
-		const imageSrc = "/image.jpeg";
+		const imageSrc = "/qr.jpg";
 		const link = document.createElement("a");
 		link.href = imageSrc;
-		link.download = "downloaded_image.jpeg";
+		link.download = "downloaded_qr.jpg";
 		link.click();
 	};
 

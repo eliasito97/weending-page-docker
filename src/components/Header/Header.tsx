@@ -10,14 +10,16 @@ const variants = {
 export function Header() {
 	return (
 		<div className="container flex flex-col items-center mx-auto px-5 mb-10">
-			<Image
-				src={"/assets/tarek/flores2.png"}
-				alt={"Frame 1"}
-				width={2500}
-				height={2500}
-				className="imagenaux mb-10 rounded-2xl"
-				priority
-			/>
+			<div className="relative md:mr-0 md:top-10">
+				<Image
+					src={"/assets/tarek/flores2.png"}
+					alt={"Frame 1"}
+					width={2500}
+					height={2500}
+					className="imagenaux mb-10 rounded-2xl"
+					priority
+				/>
+			</div>
 			<div className="max-w-3xl text-center items-center">
 				<h1 className="mb-10 text-5xl text">
 					Nuestra Boda Civil

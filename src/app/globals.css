@@ -47,9 +47,9 @@ html {
 	}
 }
 
-.absolute {
-	position: absolute;
-	animation: scroll-up 20s linear infinite;
+.absolute1 {
+	position: static;
+	animation: scroll-up 10s linear infinite;
 }
 .swiper-scrollbar-drag {
 	background: #727c73;

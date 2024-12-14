@@ -1,7 +1,18 @@
 import React from "react";
 import Image from "next/image";
+import {useState} from "react";
+import Creditos from "@/components/Creditos/Creditos";
+import Modal from "@/components/Modal/Modal";
+
 
 function TimeLine() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [modalContent, setModalContent] = useState<React.ReactNode>(null);
+
+	const openModalWithContent = (content: React.ReactNode) => {
+		setModalContent(content);
+		setIsModalOpen(true);
+	};
 	return (
 		<div className="flex flex-col justify-center items-center text-center m-5 mb-10">
 			<div className="text-center mb-8">
@@ -111,6 +122,20 @@ function TimeLine() {
 					width={1000}
 					height={1000}
 					className="w-full h-full rounded-xl"
+					onClick={() =>
+						openModalWithContent(
+							<>
+								<Image
+									src={"/assets/tarek/tarekgay.jpg"}
+									width={350}
+									height={350}
+									className="rounded-xl"
+									priority
+								/>
+								<p className="title font-semibold text-center mt-4 text-4xl">Disfruta de nuestra imagen especial</p>
+							</>
+						)
+					}
 					priority
 				/>
 				<Image
@@ -119,9 +144,28 @@ function TimeLine() {
 					width={1000}
 					height={1000}
 					className="w-full h-full rounded-xl"
+					onClick={() =>
+						openModalWithContent(
+							<>
+								<Image
+									src={"/assets/tarek/tarekgay2.jpg"}
+									width={350}
+									height={350}
+									className="rounded-xl"
+									priority
+								/>
+								<p className="title font-semibold text-center mt-4 text-4xl">Disfruta de nuestra imagen especial</p>
+							</>
+						)
+					}
 					priority
 				/>
 			</div>
+			<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+				<div className="flex flex-col items-center">
+					{modalContent}
+				</div>
+			</Modal>
 		</div>
 	);
 }

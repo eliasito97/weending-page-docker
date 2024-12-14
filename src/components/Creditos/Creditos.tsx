@@ -2,7 +2,7 @@ import React from "react";
 
 function Creditos() {
 	return (
-		<p className="absolute w-full whitespace-nowrap">
+		<p className="absolute1 whitespace-nowrap">
 			Director: Elias Chavarria<br/>
 			Productor: Elias Chavarria<br/>
 			Productor Ejecutivo: Elias Chavarria<br/>

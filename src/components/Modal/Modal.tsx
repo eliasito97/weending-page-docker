@@ -20,7 +20,7 @@ const Modal = ({ isOpen, onClose, children }) => {
 			>
 				{/* Botón de cerrar */}
 				<button
-					className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
+					className="absolute top-2 right-2 text-black-600 hover:text-black-900 "
 					onClick={onClose}
 				>
 					&times;
