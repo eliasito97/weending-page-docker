@@ -1,4 +1,5 @@
-import React from "react";
+import React,  { ReactNode}  from "react";
+
 interface ModalProps {
 	isOpen: boolean;
 	onClose: () => void;
