@@ -129,6 +129,7 @@ function TimeLine() {
 									src={"/assets/tarek/tarekgay.jpg"}
 									width={350}
 									height={350}
+									alt={"Frame 1"}
 									className="rounded-xl"
 									priority
 								/>
@@ -151,6 +152,7 @@ function TimeLine() {
 									src={"/assets/tarek/tarekgay2.jpg"}
 									width={350}
 									height={350}
+									alt={"Frame 1"}
 									className="rounded-xl"
 									priority
 								/>
