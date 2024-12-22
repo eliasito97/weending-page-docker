@@ -11,7 +11,7 @@ function GetMarry() {
 				<WeedingDay />
 				{/*<p className="text-4xl text-blue-300">faltan...</p>*/}
 				<h2 className="text-3xl font-extrabold title">
-					Capilla "Los Pinos" - 13:30 Horas
+					Capilla "Los Pinos" - 14:30 Horas
 				</h2>
 			</div>
 		</div>
