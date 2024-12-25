@@ -18,7 +18,7 @@ function Attendance() {
 	return (
 		<div className="flex flex-col text-center items-center justify-center m-2">
 			<p className="mb-8 text-center text-4xl text">
-				"por encima de todo, vistanse de amor, que es el vínculo pefecto
+				"por encima de todo, vistanse de amor, que es el vínculo perfecto
 				- Colosenses 3:14"
 			</p>
 			<h3 className="font-semibold text-5xl title mb-10">
@@ -26,7 +26,7 @@ function Attendance() {
 			</h3>
 			<p className="text-4xl text mb-10">
 				Tu presencia es importante para nosotros, por favor confirma tu
-				asistencia hasta el 15 de Diciembre
+				asistencia hasta el 03 de Enero
 			</p>
 			<div className="flex md:flex-row flex-col mb-10 items-center">
 				<CiCalendarDate className="inline text-5xl title"/>
