@@ -30,7 +30,7 @@ function Location() {
 				<p className="text-4xl text mb-2">Hora: 13:30 p.m.</p>
 				<p className="text-4xl text mb-2">La Tiquipaya</p>
 				<p className="text-4xl text mb-10">
-					Salón de eventos Tiquipaya
+					Salón de eventos Tiquiplaya
 				</p>
 				<Image
 					src={"/assets/tarek/mapa.jpg"}
