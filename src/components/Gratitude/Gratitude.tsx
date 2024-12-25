@@ -39,7 +39,7 @@ export function Gratitude() {
 					Gonzalo Dante Chavarria Arevalo{" "}
 					<PiCrossLight className="inline title"/>
 				</p>
-				<p className="mb-10 md:mt-8 text-4xl">Monica jorge Bouchabki Lens</p>
+				<p className="mb-10 md:mt-8 text-4xl">Monica Jorge Bouchabki Lens</p>
 			</div>
 			<div className="text-center">
 				<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
