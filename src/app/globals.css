@@ -40,7 +40,7 @@ html {
 }
 @keyframes scroll-up {
 	0% {
-		transform: translateY(100%);
+		transform: translateY(10%);
 	}
 	100% {
 		transform: translateY(-100%);
@@ -49,7 +49,7 @@ html {
 
 .absolute1 {
 	position: static;
-	animation: scroll-up 10s linear infinite;
+	animation: scroll-up 15s linear infinite;
 }
 .swiper-scrollbar-drag {
 	background: #727c73;

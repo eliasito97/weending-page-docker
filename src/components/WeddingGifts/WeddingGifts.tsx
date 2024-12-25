@@ -1,5 +1,6 @@
 import React from "react";
-import ImageDownloader from "../DownloadImage/DownloadImage";
+import Image from "next/image";
+
 
 function WeddingGifts() {
 	return (
@@ -12,7 +13,15 @@ function WeddingGifts() {
 				en regalarnos algo, un poco de efectivo también suena bien!
 				para asi iniciar nuestro nuevo hogar juntos.
 			</p>
-			<ImageDownloader />
+			{/*<ImageDownloader />*/}
+			<Image
+				src={"/assets/tarek/qr.jpg"}
+				alt={"Frame 1"}
+				width={400}
+				height={400}
+				className="mb-10"
+				priority
+			/>
 		</div>
 	);
 }

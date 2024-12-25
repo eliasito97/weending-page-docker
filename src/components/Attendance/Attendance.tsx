@@ -57,7 +57,7 @@ function Attendance() {
 						openModalWithContent(
 							<>
 								<Image
-									src={"/assets/tarek/batman.png"}
+									src={"/assets/tarek/tarekgay3.jpg"}
 									width={350}
 									height={350}
 									alt={"Frame 1"}
