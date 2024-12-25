@@ -10,7 +10,7 @@ function WeddingGifts() {
 			<p className="text-4xl text mb-10">
 				Tu presencia será nuestro mayor regalo, pero si estas pensando
 				en regalarnos algo, un poco de efectivo también suena bien!
-				¿Nos echas una mano para empezar nuestra vida juntos.?
+				para asi iniciar nuestro nuevo hogar juntos.
 			</p>
 			<ImageDownloader />
 		</div>

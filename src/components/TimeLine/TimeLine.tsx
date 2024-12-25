@@ -14,24 +14,14 @@ function TimeLine() {
 		setIsModalOpen(true);
 	};
 	return (
-		<div className="flex flex-col justify-center items-center text-center m-5 mb-10">
-			<div className="text-center mb-8">
-				<h2 className="text-5xl font-semibold title">
+		<div className="flex flex-col justify-center items-center text-center m-4 mb-10">
+			<div className="text-center mb-4">
+				<h2 className="text-4xl font-semibold title">
 					Itinerario
 				</h2>
 			</div>
 			<div className="flex-1 mb-10">
-				<section className="grid grid-cols-5 gap-3 mb-2">
-					<div className="">
-						<Image
-							src={"/assets/tarek/iconos/ceremonia.png"}
-							alt={"Frame 1"}
-							width={1500}
-							height={1500}
-							className="w-10 h-10 rounded-2xl"
-							priority
-						/>
-					</div>
+				<section className="grid grid-cols-4 gap-2 mb-2">
 					<div className="">
 						<Image
 							src={"/assets/tarek/iconos/recepcion.jpg"}
@@ -73,41 +63,35 @@ function TimeLine() {
 						/>
 					</div>
 				</section>
-				<section className="grid grid-cols-5 gap-3 border-t-4 mr-6 ml-5 border-black">
-					<div className="border-l-2 border-black size-3"></div>
-					<div className="border-l-2 border-black ml-1"></div>
-					<div className="border-l-2 border-black ml-5"></div>
-					<div className="border-l-2 border-black ml-7"></div>
+				<section className="grid grid-cols-4 gap-2 border-t-4 mr-4 ml-4 border-black">
+					<div className="border-l-2 border-black size-4"></div>
+					<div className="border-l-2 border-black ml-2"></div>
+					<div className="border-l-2 border-black ml-4"></div>
+					<div className="border-l-2 border-black ml-6"></div>
 					<div className="border-r-2 border-black"></div>
 				</section>
-				<section className="grid grid-cols-5 gap-3">
+				<section className="grid grid-cols-4 gap-4">
 					<div className="">
 						<p className="text-sm font-bold title">
-							16 : 00 p.m.
-						</p>
-						<p className="text-sm title">Ceremonia Civil</p>
-					</div>
-					<div className="">
-						<p className="text-sm font-bold title">
-							18 : 00 p.m.
+							13 : 30 p.m.
 						</p>
 						<p className="text-sm title">Recepción</p>
 					</div>
 					<div className="">
 						<p className="text-sm font-bold title">
-							20 : 00 p.m.
+							15 : 30 p.m.
 						</p>
 						<p className="text-sm title">Brindis</p>
 					</div>
 					<div className="">
 						<p className="text-sm font-bold title">
-							21 : 00 p.m.
+							16 : 00 p.m.
 						</p>
 						<p className="text-sm title">Comida</p>
 					</div>
 					<div className="">
 						<p className="text-sm font-bold title">
-							2 : 00 a.m.
+							∞
 						</p>
 						<p className="text-sm title">
 							Felices por siempre

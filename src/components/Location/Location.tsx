@@ -27,18 +27,27 @@ function Location() {
 				<p className="font-semibold text-5xl mb-10 title">
 					Recepción
 				</p>
-				<p className="text-4xl text mb-2">Hora: 12:30 p.m.</p>
+				<p className="text-4xl text mb-2">Hora: 13:30 p.m.</p>
 				<p className="text-4xl text mb-2">La Orquídea</p>
 				<p className="text-4xl text mb-10">
 					Av. D'Orbigny 320
 				</p>
-				<div className="flex flex-row mb-10">
-					<SlLocationPin className="inline text-5xl title" />
+				<Image
+					src={"/assets/tarek/mapa.jpg"}
+					alt={"Frame 1"}
+					width={400}
+					height={400}
+				/>
+				<div className="flex flex-row mb-10 py-10">
+
+					<SlLocationPin className="inline text-5xl title"/>
 					<MapButton
-						link="https://maps.app.goo.gl/C77L7Hq1ZxCoGshSA"
+						link="https://maps.app.goo.gl/z3DTSwtuPfeNpuwa7?g_st=iw"
 						label="Ver Mapa"
 					/>
+
 				</div>
+
 				<Image
 					src={"/assets/tarek/tarek12.jpg"}
 					alt={"Frame 1"}
@@ -58,7 +67,7 @@ function Location() {
 									width={400}
 									className="rounded-xl mb-8" // Clases Tailwind
 								/>
-								<p className="title font-semibold text-center mt-4 text-4xl">Disfruta de nuestra imagen especial</p>
+								<p className="title font-semibold text-center mt-4 text-4xl">Disfruta de nuestro video especial</p>
 							</>
 						)
 					}
