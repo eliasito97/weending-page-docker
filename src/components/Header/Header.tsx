@@ -1,7 +1,5 @@
 import Image from "next/image";
-import MusicPlayer from "../MusicPlayer/MusicPlayer";
-import { FaHeart } from "react-icons/fa";
-import { motion } from "framer-motion";
+
 
 const variants = {
 	hidden: { opacity: 0, y: 50 },
@@ -27,16 +25,6 @@ export function Header() {
 				<h2 className="mb-10 text-8xl font-semibold title">
 					Daniela & Tarek
 				</h2>
-			</div>
-			<div className="text-center items-center m-5 text-4xl">
-				<p className="mb-10 text">
-					Presiona el
-					<span className="pr-3 pl-4">
-						<FaHeart className="inline heard text-1xl"/>
-					</span>
-					para escuchar nuestra canción
-				</p>
-				<MusicPlayer/>
 			</div>
 			<video
 				src="/assets/tarek/videogay3.mp4" // Ruta del video
