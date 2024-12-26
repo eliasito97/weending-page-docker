@@ -41,13 +41,6 @@ export function Gratitude() {
 				</p>
 				<p className="mb-10 md:mt-8 text-4xl">Monica Jorge Bouchabki Lens</p>
 			</div>
-			<div className="text-center">
-				<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-					<div className="flex flex-col items-center">
-						{modalContent}
-					</div>
-				</Modal>
-			</div>
 		</div>
 	);
 }

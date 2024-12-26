@@ -87,11 +87,6 @@ function Location() {
 				/>
 
 			</div>
-			<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-				<div className="flex flex-col items-center">
-					{modalContent}
-				</div>
-			</Modal>
 		</div>
 	);
 }

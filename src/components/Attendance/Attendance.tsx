@@ -51,34 +51,6 @@ function Attendance() {
 			<h3 className="font-semibold text-5xl title mb-10">
 				¡Te esperamos!
 			</h3>
-			<div className="flex flex-row mb-10">
-				<button
-					onClick={() =>
-						openModalWithContent(
-							<>
-								<Image
-									src={"/assets/tarek/batman.png"}
-									width={350}
-									height={350}
-									alt={"Frame 1"}
-									className="rounded-xl"
-									priority
-								/>
-								<div
-									className="relative h-32 w-full overflow-hidden text-center"
-								>
-								<Creditos/>
-								</div>
-
-							</>
-						)
-					}
-					className="cuadrados py-2 px-4 rounded-3xl buttons text-4xl">
-					<p className="title">
-						¡No aprietes ese botón!
-					</p>
-				</button>
-			</div>
 			<div className="relative md:ml-0 md:-top-0 mt-0 md:mt-0">
 				<Image
 					src={"/assets/tarek/flores1.png"}
@@ -90,11 +62,6 @@ function Attendance() {
 				/>
 			</div>
 
-			<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-				<div className="flex flex-col items-center">
-					{modalContent}
-				</div>
-			</Modal>
 		</div>
 	);
 }
