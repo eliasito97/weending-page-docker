@@ -27,7 +27,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
 		>
 			{/* Contenedor del modal */}
 			<div
-				className="relative w-full max-w-md rounded-lg shadow-lg flex flex-col items-center p-6 bg-white"
+				className="relative w-full max-w-md rounded-lg shadow-lg flex flex-col items-center p-6 bg-white modal_tarek"
 				onClick={(e: MouseEvent<HTMLDivElement>) => e.stopPropagation()} // Evita que el clic dentro del modal cierre el modal
 			>
 				{/* Botón para cerrar el modal */}

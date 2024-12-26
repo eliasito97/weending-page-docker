@@ -38,7 +38,7 @@ function Location() {
 					width={400}
 					height={400}
 				/>
-				<div className="flex flex-row mb-10 py-10">
+				<div className="flex flex-row mb-10 pt-10">
 
 					<SlLocationPin className="inline text-5xl title"/>
 					<MapButton

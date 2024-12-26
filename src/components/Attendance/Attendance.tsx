@@ -57,7 +57,7 @@ function Attendance() {
 						openModalWithContent(
 							<>
 								<Image
-									src={"/assets/tarek/tarekgay3.jpg"}
+									src={"/assets/tarek/batman.png"}
 									width={350}
 									height={350}
 									alt={"Frame 1"}
@@ -79,13 +79,13 @@ function Attendance() {
 					</p>
 				</button>
 			</div>
-			<div className="relative md:ml-60 md:-top-10 mt-5 md:mt-0">
+			<div className="relative md:ml-0 md:-top-0 mt-0 md:mt-0">
 				<Image
 					src={"/assets/tarek/flores1.png"}
 					alt={"Frame 1"}
 					width={2500}
 					height={2500}
-					className="imagenaux1 mb-10 rounded-2xl"
+					className="imagenaux1 rounded-2xl"
 					priority
 				/>
 			</div>
